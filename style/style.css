@@ -89,6 +89,9 @@
   border: none; border-radius: 7px;
   cursor: pointer;
 }
+.hero-image{
+  max-width: 100%;
+}
 
 
 
@@ -155,7 +158,8 @@
 }
 .banner-content{
   text-align: center;
-  gap: .5rem;
+  margin-top: -9rem;
+  max-width: 90%;
 }
 .banner-image{
   max-width: 90%;
