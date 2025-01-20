@@ -6,3 +6,160 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+.header{
+  margin: 20px 0;
+}
+/* sheared style */
+.flex{
+  display: flex;
+  align-items: center;
+}
+/* navigation bar style */
+.Hamburger-menu{
+  display: none;
+}
+.nav, .banner{
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  max-width: 68rem;
+  margin: 0 auto;
+  
+}
+.menu-bar{
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+}
+.menu-bar a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.menu-bar li{
+  list-style: none;
+}
+.name{
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.home{
+  color:orange;
+}
+.about{
+  color: skyblue;
+}
+.facilities{
+  color: palevioletred;
+}
+.admission{
+  color: rgba(93, 88, 239, 1);
+}
+.primary-btn{
+  width:9rem; height: 2.5rem;
+  padding: .3rem 1.2rem;
+  background: orange; color: white;
+  font-weight: 700; font-size: 1rem;
+  border: none; border-radius: 7px;
+  cursor: pointer;
+}
+/* banner-section style */
+.banner-heading{
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.orange{
+  color: orange;
+}
+.sky-blue{
+  color:rgba(1, 172, 253, 1);
+}
+.banner-detail{
+  margin-top: .8rem;
+  font-size: .9rem;
+  font-weight: 400;
+}
+.banner-btn{
+  margin-top: 1rem;
+  width:9rem; height: 2.5rem;
+  padding: .3rem 1.2rem;
+  background: rgb(21, 21, 21); color: white; 
+  font-weight: 700; font-size: 1rem;
+  border: none; border-radius: 7px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive for mobile device */
+@media screen and (max-width:576px) {
+  .nav-menus, .btn-container{
+    display: none;
+  }
+  .Hamburger-menu{
+    display: block;
+  }
+  .nav{
+    margin-top: -1.23rem;
+    border:1px solid orange;
+    justify-content: stretch;
+    padding: 10px 15px;
+  }
+.banner{
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.banner-content{
+  text-align: center;
+  gap: .5rem;
+}
+.banner-image{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+}

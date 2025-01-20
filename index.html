@@ -17,34 +17,36 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <!--navigation bar -->
-    <nav class="nav">
-      <div class="brand-container">
-        <h3><img src="./assets/logo.png" alt="school-logo">SCHOOL</h3>
+    <nav class="nav flex">
+      <div class="brand-container flex">
+        <img src="./assets/logo.png" alt="school-logo">
+        <h3 class="name">Academy</h3>
       </div>
       <div class="nav-menus">
-        <div class="menu">
-          <ul>
-            <li><a href="http://">Home</a></li>
-            <li><a href="http://">About</a></li>
-            <li><a href="http://">Facilities</a></li>
-            <li><a href="http://">Admission</a></li>
+          <ul class="flex menu-bar">
+            <li><a class="home" href="http://">Home</a></li>
+            <li><a class="about" href="http://">About</a></li>
+            <li><a class="facilities" href="http://">Facilities</a></li>
+            <li><a class="admission" href="http://">Admission</a></li>
           </ul>
         </div>
-        <button>Connect</button>
-      </div>
+        <div class="btn-container">
+          <button class="primary-btn">Contact</button>
+        </div>
+        <div class="Hamburger-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
     </nav>
     <!-- banner section -->
-    <div class="banner">
+    <div class="banner flex">
       <div class="banner-content">
-        <h1>Empowering<br>
-          students from small<br>
-          age towards vision</h1>
-        <p>With the courage, Confidence, Creativity and Compassion to make<br>their Unique Contribution in a Diverse and
-          Dynamic
-          World.</p>
-        <button>Enroll Now</button>
+        <h1 class="banner-heading"><span class="orange">Empowering</span><br>
+          students from small
+          age <span class="sky-blue">towards vision</span></h1>
+        <p class="banner-detail">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World</p>
+        <button class="banner-btn">Enroll Now</button>
       </div>
       <img src="./assets/hero-kids.png" alt="" class="banner-image">
     </div>
