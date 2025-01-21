@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,800;1,800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+    
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -56,43 +57,36 @@
   <main>
     <!--Curriculum section-->
     <section class="Curriculum">
-      <div class="heading-curriculam">
-        <h2>Standard Curriculum</h2>
-      </div>
+      <h2 class="curriculum-heading">Standard Curriculum</h2>
       <div class="curriculum-cards">
-        <div class="curriculam-content">
+        <div class="curriculam-content-one">
           <img src="./assets/kinder.png" alt="">
-          <h4>Kinder (3-6) Years</h4>
-          <p>The kindergarten curriculum focuses on foundational development through play-based and structured
+          <h4 class="curriculum-name">Kinder (3-6) Years</h4>
+          <p class="curriculam-details">The kindergarten curriculum focuses on foundational development through play-based and structured
             activities.
             Children learn language skills such as recognizing letters, phonics, and simple vocabulary</p>
-          <button>Read More</button>
+          <button class="btn-one">Read More</button>
         </div>
-        <div class="curriculam-content">
+        <div class="curriculam-content-two">
           <img src="./assets/elementary.png" alt="">
-          <h4>Elementary School</h4>
-          <p>Elementary education emphasizes academic, social, and personal growth. Language arts include reading
-            comprehension,
-            writing skills, grammar, and vocabulary expansion</p>
-          <button>Read More</button>
+          <h4 class="curriculum-name">Elementary School</h4>
+          <p class="curriculam-details">Elementary education emphasizes academic, social, and personal growth. Language arts include reading comprehension, writing skills, grammar, and vocabulary expansion. Mathematics</p>
+          <button class="btn-two">Read More</button>
         </div>
-        <div class="curriculam-content">
+        <div class="curriculam-content-three">
           <img src="./assets/middle.png" alt="">
-          <h4>Middle (10-16) Years</h4>
-          <p>The middle school curriculum focuses on academic rigor and personal development. Core subjects include
+          <h4 class="curriculum-name">Middle (10-16) Years</h4>
+          <p class="curriculam-details">The middle school curriculum focuses on academic rigor and personal development. Core subjects include
             advanced
             language
-            arts with essays and critical analysis, mathematics with algebra and geometry, and science covering biology,
-            physics,
-            and chemistry concepts</p>
-          <button>Read More</button>
+            arts with essays and critical analysis, mathematics with algebra and geometry</p>
+          <button class="btn-three">Read More</button>
         </div>
       </div>
       <div class="curriculum-btns">
         <span>
-          <button><b>
-              <<b></button>
-          <button><b>></b></button>
+          <button class="btn-curriculum"><i class="fa-solid fa-less-than"></i></button>
+          <button class="btn-curriculum"><i class="fa-solid fa-greater-than"></i></button>
         </span>
       </div>
     </section>
