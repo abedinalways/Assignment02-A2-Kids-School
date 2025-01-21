@@ -86,7 +86,8 @@
 }
 .banner-detail {
   margin-top: 0.8rem;
-  font-size: 0.9rem;
+  margin-left: -1.5px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .banner-btn {
@@ -226,9 +227,12 @@
   border-top-left-radius: 0.7rem;
 }
 .fun-toddler h3 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+.fun-toddler p{
+  font-size: .8rem;
 }
 .fun-toddler h3,
 p,
@@ -331,7 +335,6 @@ button {
   background-position: center;
   background-size: auto;
   padding-bottom: 3rem;
-  text-align: center;
 }
 .story-cards {
   margin: 2rem auto;
@@ -350,11 +353,59 @@ button {
   border-radius: 1.2rem;
   cursor: pointer;
 }
+.story-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* marquee section */
+.welcome{
+  color: rgb(255, 0, 0);  
+  font-weight: 700;
+  font-size: 1.2rem;
+  background: rgb(255, 255, 255);   
+}
 /* footer section style */
 .footer {
   background: rgba(1, 172, 253, 1);
+  justify-content: space-around;
+  padding: 2rem;
+  align-items: center;
 }
-
+.footer-info{
+  color: white;
+  justify-content:start;
+ align-items: center;
+ gap: none;
+}
+.footer-info h3{
+  font-size: 1.9rem;
+  margin-left: -1.8rem;
+}
+.footer-first{
+  text-align: justify;
+}
+.footer-first p{
+  font-size: .7rem;
+  margin-left: 3.8rem;
+  margin-top: -1.5rem;
+  max-width: 16rem;
+  color: white;
+  font-weight: 600;
+}
+.about-school, .social-contact{
+  font-weight: 500;
+  text-align: start;
+  color: white;
+}
+.list-about{
+  list-style: none;
+  margin: .5rem 1rem;
+}
+.social-contact h3{
+  margin-top: -4rem;
+  padding-bottom: .8rem;
+}
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
   /* navigation section */
@@ -412,8 +463,8 @@ button {
   }
   .others-story {
     max-width: 100%;
-    margin: 0 0.5rem;
-    gap: 0.5rem;
+    margin: 0 1rem;
+    row-gap: 1rem;
   }
   .cards {
     max-width: 100%;
@@ -422,6 +473,35 @@ button {
   .others-story-card {
     max-width: 100%;
     margin: 0 auto;
-    height: auto;
   }
+  /* footer section */
+  .footer{
+    flex-direction: column;
+    justify-content: start;
+  }
+  .list-about{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+  }
+  .about-school{
+    margin-left: -4rem;
+    margin-top: 1rem;
+
+  }
+  .social-contact{
+    margin-top: 1rem;
+    margin-left: -1rem;
+  }
+}
+/* medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+ .nav,
+.banner {
+  justify-content: ;
+  align-items: center;
+  gap: 1rem;
+  max-width: 10rem;
+  margin: 0 auto;
+}
 }
