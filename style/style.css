@@ -1,155 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,800;1,800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Quicksand", serif;
+  font-family: 'Quicksand', serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-.header{
+.header {
   margin: 20px 0;
 }
 /* sheared style */
-.flex{
+.flex {
   display: flex;
   align-items: center;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 /* navigation bar style */
-.Hamburger-menu{
+.Hamburger-menu {
   display: none;
 }
-.nav, .banner{
+.nav,
+.banner {
   justify-content: center;
   align-items: center;
   gap: 10rem;
   max-width: 68rem;
   margin: 0 auto;
-  
 }
-.menu-bar{
+.menu-bar {
   justify-content: space-evenly;
   align-items: center;
   gap: 3rem;
 }
-.menu-bar a{
+.menu-bar a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
 }
-.menu-bar li{
+.menu-bar li {
   list-style: none;
 }
-.name{
+.name {
   font-size: 1.8rem;
   font-weight: 700;
 }
 
-.home{
-  color:orange;
+.home {
+  color: orange;
 }
-.about{
+.about {
   color: skyblue;
 }
-.facilities{
+.facilities {
   color: palevioletred;
 }
-.admission{
+.admission {
   color: rgba(93, 88, 239, 1);
 }
-.primary-btn{
-  width:9rem; height: 2.5rem;
-  padding: .3rem 1.2rem;
-  background: orange; color: white;
-  font-weight: 700; font-size: 1rem;
-  border: none; border-radius: 7px;
+.primary-btn {
+  width: 9rem;
+  height: 2.5rem;
+  padding: 0.3rem 1.2rem;
+  background: orange;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 7px;
   cursor: pointer;
 }
 /* banner-section style */
-.banner-heading{
+.banner-heading {
   font-size: 2.6rem;
   font-weight: 700;
 }
-.orange{
+.orange {
   color: orange;
 }
-.sky-blue{
-  color:rgba(1, 172, 253, 1);
+.sky-blue {
+  color: rgba(1, 172, 253, 1);
 }
-.banner-detail{
-  margin-top: .8rem;
-  font-size: .9rem;
+.banner-detail {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 .banner-btn{
-  margin-top: 1rem;
-  width:9rem; height: 2.5rem;
-  padding: .3rem 1.2rem;
-  background: rgb(21, 21, 21); color: white; 
-  font-weight: 700; font-size: 1rem;
-  border: none; border-radius: 7px;
+  width: 9rem;
+  height: 2.5rem;
+  padding: 0.3rem 1.2rem;
+  background: rgb(21, 21, 21);
+  color: white;
+  text-align: center;
+  margin: 1rem auto;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 7px;
   cursor: pointer;
 }
-.hero-image{
+.hero-image {
   max-width: 100%;
 }
 /* Curriculum section */
-.Curriculum{
+.Curriculum {
   text-align: center;
   background: url(../assets/bg.png);
   /* background-repeat: no-repeat; */
   background-size: contain;
 }
-.curriculum-heading{
+.curriculum-heading,
+.our-stories {
   font-size: 2.3rem;
   font-weight: 700;
   margin: 4rem auto;
+  text-align: center;
 }
-.curriculum-cards{
+.curriculum-cards {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  max-width:68rem;
+  max-width: 68rem;
   gap: 1.5rem;
   margin: 0 auto;
 }
-.curriculam-content-one{
-  width: 22rem; height: 28rem;
+.curriculam-content-one {
+  width: 22rem;
+  height: 28rem;
   background-image: linear-gradient(0deg, #f8f5fa 40%, #c2e0ff 90%);
-  box-shadow:  2px 2px 5px 5px rgb(239, 239,  239);  
+  box-shadow: 2px 2px 5px 5px rgb(239, 239, 239);
   padding: 1.5rem 1rem;
   border-radius: 1.2rem;
 }
-.curriculam-content-two{
-  width: 22rem; height: 28rem;
+.curriculam-content-two {
+  width: 22rem;
+  height: 28rem;
   background-image: linear-gradient(0deg, #f8f5fa 40%, #ffd7d4 90%);
-  box-shadow:  2px 2px 5px 5px rgb(239, 239,  239); 
+  box-shadow: 2px 2px 5px 5px rgb(239, 239, 239);
   padding: 1.5rem 1rem;
   border-radius: 1.2rem;
 }
-.curriculam-content-three{
-  width: 22rem; height: 28rem;
-  background-image: linear-gradient(0deg, #f8f5fa 40%, #cfc9ff 90%);  
-  box-shadow:  2px 2px 5px 5px rgb(239, 239,  239);  
+.curriculam-content-three {
+  width: 22rem;
+  height: 28rem;
+  background-image: linear-gradient(0deg, #f8f5fa 40%, #cfc9ff 90%);
+  box-shadow: 2px 2px 5px 5px rgb(239, 239, 239);
   padding: 1.5rem 1rem;
   border-radius: 1.2rem;
 }
-.curriculum-name{
+.curriculum-name {
   font-size: 1.3rem;
   font-weight: 600;
   margin: 1.5rem 0;
 }
-.curriculam-details{
-  font-family: "Raleway", serif;
+.curriculam-details,
+.toddler-details {
+  font-family: 'Raleway', serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-style: normal;
   color: rgba(128, 128, 128, 1);
   margin-bottom: 2rem;
 }
-.btn-one{
+.btn-one {
   border: none;
   color: #4ca6ff;
   background: none;
@@ -157,7 +176,7 @@
   font-size: 1rem;
   cursor: pointer;
 }
-.btn-two{
+.btn-two {
   border: none;
   color: #ff453c;
   background: none;
@@ -165,95 +184,236 @@
   font-size: 1rem;
   cursor: pointer;
 }
-.btn-three{
+.btn-three {
   border: none;
-  color: #bc19e5; 
+  color: #bc19e5;
   background: none;
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
 }
-.btn-curriculum{
+.btn-curriculum {
   background: orange;
   color: white;
   border-radius: 50%;
   border: none;
   margin: 3rem 0;
-  width: 4rem; height: 4rem;
+  width: 4rem;
+  height: 4rem;
   font-weight: 700;
-  cursor:pointer;
+  cursor: pointer;
+}
+/* Our story section style */
+.cards {
+  max-width: 68rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.fun-toddler {
+  max-width: 33rem;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 2px 2px 0px 0px rgb(242, 242, 242);
+  border-radius: 0.7rem;
+  position: relative;
+}
+.fun-toddler img {
+  max-width: 33rem;
+  height: auto;
+  border-top-right-radius: 0.7rem;
+  border-top-left-radius: 0.7rem;
+}
+.fun-toddler h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.fun-toddler h3,
+p,
+button {
+  margin-left: 1rem;
+}
+.special-btn-one {
+  background: rgb(29, 160, 212);
+  color: white;
+  font-family: 'Raleway', serif;
+  padding: 8px 25px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 1.5rem;
+  position: relative;
+  top: -2rem;
+  left: 1.4rem;
+}
+.special-btn-two {
+  background: rgb(8, 212, 154);
+  color: white;
+  font-family: 'Raleway', serif;
+  padding: 8px 25px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 1.5rem;
+  position: relative;
+  top: -2rem;
+  left: 1.4rem;
+}
+.special-btn-three {
+  background: rgb(10, 27, 255);
+  color: white;
+  font-family: 'Raleway', serif;
+  padding: 8px 25px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 1.5rem;
+  position: relative;
+  top: -2rem;
+  left: 1.4rem;
+}
+.special-btn-four {
+  background: rgb(206, 4, 213);
+  color: white;
+  font-family: 'Raleway', serif;
+  padding: 8px 25px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 1.5rem;
+  position: relative;
+  top: -2rem;
+  left: 1.4rem;
+}
+.special-btn-five {
+  background: rgba(223, 149, 0, 0.864);
+  color: white;
+  font-family: 'Raleway', serif;
+  padding: 8px 25px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 1.5rem;
+  position: relative;
+  top: -2rem;
+  left: 1.4rem;
+}
+.special-btn-one {
+  background: rgb(29, 160, 212);
+  color: white;
+  font-family: 'Raleway', serif;
+  padding: 8px 25px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 1.5rem;
+  position: relative;
+  top: -2rem;
+  left: 1.4rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.others-story-card {
+  max-width: 16rem;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 2px 2px 0px 0px rgb(255, 252, 252);
+  border-radius: 0.7rem;
+  position: relative;
+}
+.others-story-card img {
+  max-width: 16rem;
+  height: auto;
+  border-top-right-radius: 0.7rem;
+  border-top-left-radius: 0.7rem;
+}
+.others-story-card h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: -0.5rem;
+  padding: 0 0.7rem;
+}
+.others-story {
+  max-width: 33rem;
+  height: 33.63rem;
+  gap: 1rem;
+}
+.stories {
+  background:url('../assets/bg.png'), linear-gradient(
+      0deg,
+      rgb(255, 214, 194) 0%,
+      rgba(246, 246, 246, 0.953) 70.034%); 
+  background-position: center;
+  background-size: auto;
+  padding-bottom: 3rem;
+}
+.story-cards{
+  margin: 2rem auto;
+  
+}
+.card-btn{
+  width: 9rem;
+  height: 3rem;
+  padding: 1rem 1.5rem;
+  background: rgb(21, 21, 21);
+  color: white;
+  text-align: center;
+  margin: 2rem auto;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+/* footer section style */
+.footer{
+  background:rgba(1, 172, 253, 1);
+}
 
 /* responsive for mobile device */
-@media screen and (max-width:576px) {
-  .nav-menus, .btn-container{
+@media screen and (max-width: 576px) {
+  /* navigation section */
+  .nav-menus,
+  .btn-container {
     display: none;
   }
-  .Hamburger-menu{
+  .Hamburger-menu {
     display: block;
   }
-  .nav{
+  .nav {
     margin-top: -1.23rem;
-    border:1px solid orange;
+    border: 1px solid orange;
     justify-content: stretch;
     padding: 10px 15px;
   }
-.banner{
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-.banner-content{
-  text-align: center;
-  margin-top: -9rem;
-  max-width: 90%;
-}
-.banner-image{
-  max-width: 90%;
-  margin: 0 auto;
-}
-
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .banner-content {
+    text-align: center;
+    margin-top: -9rem;
+    max-width: 90%;
+  }
+  .banner-image {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  /* Curriculum section */
+  .curriculum-cards {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 5px auto;
+  }
+  .Curriculum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .curriculum-btns {
+    display: none;
+  }
 }
