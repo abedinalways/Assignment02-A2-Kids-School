@@ -220,7 +220,7 @@
   position: relative;
 }
 .fun-toddler img {
-  max-width: 33rem;
+  max-width: 100%;
   height: auto;
   border-top-right-radius: 0.7rem;
   border-top-left-radius: 0.7rem;
@@ -295,18 +295,6 @@ button {
   top: -2rem;
   left: 1.4rem;
 }
-.special-btn-one {
-  background: rgb(29, 160, 212);
-  color: white;
-  font-family: 'Raleway', serif;
-  padding: 8px 25px;
-  margin: 10px auto;
-  border: none;
-  border-radius: 1.5rem;
-  position: relative;
-  top: -2rem;
-  left: 1.4rem;
-}
 
 .others-story-card {
   max-width: 16rem;
@@ -317,7 +305,7 @@ button {
   position: relative;
 }
 .others-story-card img {
-  max-width: 16rem;
+  max-width: 100%;
   height: auto;
   border-top-right-radius: 0.7rem;
   border-top-left-radius: 0.7rem;
