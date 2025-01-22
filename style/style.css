@@ -8,7 +8,7 @@
   font-style: normal;
 }
 .header {
-  margin: 20px 0;
+  margin: 1.4rem 0;
 }
 /* sheared style */
 .flex {
@@ -48,7 +48,6 @@
   font-size: 1.8rem;
   font-weight: 700;
 }
-
 .home {
   color: orange;
 }
@@ -205,6 +204,9 @@
   cursor: pointer;
 }
 /* Our story section style */
+.others-story-card-special {
+  display: none;
+}
 .cards {
   max-width: 68rem;
   justify-content: center;
@@ -231,8 +233,8 @@
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
-.fun-toddler p{
-  font-size: .8rem;
+.fun-toddler p {
+  font-size: 0.8rem;
 }
 .fun-toddler h3,
 p,
@@ -320,6 +322,26 @@ button {
   margin-top: -0.5rem;
   padding: 0 0.7rem;
 }
+.others-story-card-special{
+  max-width: 16rem;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 2px 2px 0px 0px rgb(255, 252, 252);
+  border-radius: 0.7rem;
+  position: relative;
+}
+.others-story-card-special img {
+  max-width: 100%;
+  height: auto;
+  border-top-right-radius: 0.7rem;
+  border-top-left-radius: 0.7rem;
+}
+.others-story-card-special h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: -0.5rem;
+  padding: 0 0.7rem;
+}
 .others-story {
   max-width: 100%;
   height: 33.63rem;
@@ -353,17 +375,17 @@ button {
   border-radius: 1.2rem;
   cursor: pointer;
 }
-.story-btn{
+.story-btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 /* marquee section */
-.welcome{
-  color: rgb(255, 0, 0);  
+.welcome {
+  color: rgb(255, 0, 0);
   font-weight: 700;
   font-size: 1.2rem;
-  background: rgb(255, 255, 255);   
+  background: rgb(255, 255, 255);
 }
 /* footer section style */
 .footer {
@@ -372,39 +394,40 @@ button {
   padding: 2rem;
   align-items: center;
 }
-.footer-info{
+.footer-info {
   color: white;
-  justify-content:start;
- align-items: center;
- gap: none;
+  justify-content: start;
+  align-items: center;
+  gap: none;
 }
-.footer-info h3{
+.footer-info h3 {
   font-size: 1.9rem;
   margin-left: -1.8rem;
 }
-.footer-first{
+.footer-first {
   text-align: justify;
 }
-.footer-first p{
-  font-size: .7rem;
+.footer-first p {
+  font-size: 0.7rem;
   margin-left: 3.8rem;
   margin-top: -1.5rem;
   max-width: 16rem;
   color: white;
   font-weight: 600;
 }
-.about-school, .social-contact{
+.about-school,
+.social-contact {
   font-weight: 500;
   text-align: start;
   color: white;
 }
-.list-about{
+.list-about {
   list-style: none;
-  margin: .5rem 1rem;
+  margin: 0.5rem 1rem;
 }
-.social-contact h3{
+.social-contact h3 {
   margin-top: -4rem;
-  padding-bottom: .8rem;
+  padding-bottom: 0.8rem;
 }
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
@@ -475,33 +498,119 @@ button {
     margin: 0 auto;
   }
   /* footer section */
-  .footer{
+  .footer {
     flex-direction: column;
     justify-content: start;
   }
-  .list-about{
+  .list-about {
     display: flex;
     flex-direction: column;
     padding-bottom: 5rem;
   }
-  .about-school{
+  .about-school {
     margin-left: -4rem;
     margin-top: 1rem;
-
   }
-  .social-contact{
+  .social-contact {
     margin-top: 1rem;
     margin-left: -1rem;
   }
 }
 /* medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
- .nav,
-.banner {
-  justify-content: ;
+  .nav,
+  .banner {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .header {
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+  .menu-bar {
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+  }
+  .menu-bar a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .btn-container {
+    max-width: 100%;
+  }
+  /* banner section */
+  .banner-image {
+    max-width: 100%;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-content{
+    text-align: center;
+    margin: 0 2rem;
+    max-width: 100%;
+  }
+  /* Curriculum section */
+  .curriculum-cards {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 5px auto;
+  }
+  .Curriculum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .curriculum-btns {
+    display: none;
+  }
+  /* Our story section */
+  .fun-toddler {
+    display: none;
+  }
+  .others-story-card-special {
+    display:inline-block;
+  }
+  .others-story {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    margin: 0 1rem;
+    row-gap: 1rem;
+  }
+  .cards {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .others-story-card {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  /* footer section */
+ .footer{
+  gap: 4rem;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
-  max-width: 10rem;
-  margin: 0 auto;
-}
+  max-height: 100%;
+ }
+ .about-school{
+  margin-top: 2rem;
+ }
+ .social-contact{
+  margin-top: 4rem;
+ }
 }
